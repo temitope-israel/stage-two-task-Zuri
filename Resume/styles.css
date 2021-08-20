@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@400;600&display=swap");
+:root {
+  --primary-color-dark: rgb(28, 69, 62);
+  --primary-color-light: rgba(255, 255, 255);
+  --aside-color: rgba(111, 128, 125, 0.55);
+  --main-color: rgba(111, 128, 125, 0.25);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georama", sans-serif;
+  background-color: rgb(253, 253, 253);
+}
+
+header {
+  background-color: var(--primary-color-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 1px 0px 5px rgb(0, 0, 0);
+}
+
+aside {
+  background-color: rgba(111, 128, 125, 0.55);
+  padding: 10px;
+}
+
+main {
+  background-color: rgba(111, 128, 125, 0.25);
+}
+
+section h3 {
+  color: var(--primary-color-dark);
+}
+
+ul {
+  font-size: 0.95em;
+  line-height: 25px;
+  margin-bottom: 10px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+main section > h3 {
+  /* font-size: 1.5em; */
+  margin-bottom: 5px;
+}
+
+/* Styling for Icons */
+.fas,
+.far,
+.fab {
+  color: var(--primary-color-dark);
+  font-size: 0.85em;
+}
+
+.personal-info .icon {
+  font-size: 0.85em;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: var(--primary-color-dark);
+  color: var(--primary-color-light);
+  text-align: center;
+  padding: 7px 5px;
+}
+
+.template {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color-light);
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  transition: all 3s ease-in-out;
+}
+
+header .logo {
+  width: 30%;
+  text-align: right;
+  /* padding: 25px 20px 10px 5px; */
+  /* border: 3px solid #fff; */
+  justify-self: flex-end;
+  color: var(--primary-color-light);
+  /* align-self: center; */
+  /* border-right: 5px solid #45091c;
+  border-top-right-radius: 50px; */
+}
+
+header .logo img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* header .logo .initials {
+  margin: 0px 0px 0px 10px;
+  border-top: 5px solid #45091c;
+  border-top-left-radius: 50px;
+  border-right: 2px solid #fff;
+  border-top-right-radius: 50px;
+  padding: 10px;
+  font-size: 2em;
+} */
+
+header .description {
+  margin-left: 10px;
+}
+
+header .description .template-name {
+  font-size: 1.5em;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  color: var(--primary-color-light);
+}
+
+header .description .template-job-title {
+  margin-left: 10px;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+
+.objective {
+  padding: 25px 10px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.objective h3 {
+  letter-spacing: 0.12em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 5px solid var(--primary-color-dark);
+}
+
+/* Styling for Personal INfo Section */
+
+.personal-info {
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.personal-info h3 {
+  letter-spacing: 0.12em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-top: 5px solid var(--primary-color-dark);
+}
+
+.personal-info p {
+  font-size: 0.95em;
+  margin-left: 2px;
+}
+
+.personal-info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.personal-info a:link,
+.personal-info a:visited {
+  color: inherit;
+}
+
+/* End.... */
+
+.row div:nth-child(2) > p {
+  font-size: 1em;
+  line-height: 20px;
+}
+
+.skills ul,
+.software ul,
+.language ul,
+.interests ul {
+  list-style: none;
+  margin: 2px;
+}
+
+/* Styling for skills */
+.skills h3 {
+  margin-bottom: 5px;
+  letter-spacing: 0.12em;
+  border-top: 5px solid var(--primary-color-dark);
+}
+/* End... */
+
+.software h3 {
+  margin-bottom: 5px;
+  border-top: 5px solid var(--primary-color-dark);
+  letter-spacing: 0.12em;
+}
+
+.language h3 {
+  margin-bottom: 5px;
+  border-top: 5px solid var(--primary-color-dark);
+  letter-spacing: 0.12em;
+}
+
+.personal-info,
+.skills,
+.software,
+.experience,
+.education {
+  margin-bottom: 15px;
+}
+
+/* Styling for Experience Section */
+.experience {
+  padding: 10px;
+}
+.experience h3 {
+  margin-bottom: 5px;
+  letter-spacing: 0.12em;
+  margin-bottom: 5px;
+}
+
+.experience .row div:first-child {
+  font-weight: 600;
+}
+
+.experience .row div > p {
+  font-weight: 600;
+}
+/* End... */
+
+/* Styling for Education Section */
+.education {
+  padding: 10px;
+  line-height: 20px;
+}
+
+.education h3 {
+  letter-spacing: 0.12em;
+  margin-bottom: 5px;
+}
+
+.education .row {
+  margin: 5px 0px;
+}
+
+.education .row div:first-child {
+  font-weight: 600;
+}
+
+.education .row div > p {
+  font-weight: 600;
+}
+/* End... */
+
+/* Styling for INterests */
+.interests {
+  padding: 10px;
+}
+
+.interests h3 {
+  margin-bottom: 5px;
+  letter-spacing: 0.12em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 10px;
+}
+
+footer img {
+  height: 50px;
+}
+
+/* End... */
+
+/* **********************
+   **********************
+        Media Queries
+   **********************
+   **********************
+*/
+@media screen and (min-width: 768px) {
+  /* header .logo {
+    width: 20%;
+    font-size: 2em;
+    /* padding: 25px 85px 10px 0px; 
+  } */
+
+  header .description .template-name {
+    font-size: 2.9em;
+    margin-bottom: 5px;
+    letter-spacing: 0.1em;
+  }
+
+  header .description .template-job-title {
+    font-size: 1.25em;
+  }
+
+  .objective {
+    font-size: 1.2em;
+  }
+
+  .personal-info {
+    font-size: 1.15em;
+  }
+
+  .personal-info h3 {
+    font-size: 1.35em;
+  }
+
+  .skills {
+    font-size: 1.15em;
+  }
+
+  .skills h3 {
+    font-size: 1.35em;
+  }
+
+  .software {
+    font-size: 1.15em;
+  }
+
+  .software h3 {
+    font-size: 1.35em;
+  }
+
+  .language {
+    font-size: 1.15em;
+  }
+
+  .language h3 {
+    font-size: 1.35em;
+  }
+
+  .experience {
+    font-size: 1.15em;
+  }
+
+  .experience h3 {
+    font-size: 1.35em;
+  }
+
+  .education {
+    font-size: 1.15em;
+  }
+
+  .education h3 {
+    font-size: 1.35em;
+  }
+
+  .interests {
+    font-size: 1.15em;
+  }
+
+  .interests h3 {
+    font-size: 1.35em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .template {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    background-color: var(--primary-color-light);
+  }
+
+  header .logo img {
+    width: 75%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  header .description .template-name {
+    font-size: 3.5em;
+  }
+
+  .aside-main {
+    display: flex;
+  }
+
+  .personal-info,
+  .skills,
+  .software,
+  .experience,
+  .education {
+    line-height: 2em;
+  }
+
+  .personal-info p {
+    font-size: 0.9em;
+    margin-left: 2px;
+  }
+
+  .experience h3 {
+    margin-bottom: 10px;
+  }
+
+  .experience ul {
+    font-size: 1.05em;
+    line-height: 1.5em;
+  }
+
+  .experience .row {
+    display: flex;
+  }
+
+  .experience .row div:first-child {
+    margin-right: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .experience .row div:nth-child(2) p {
+    line-height: 1.3em;
+  }
+
+  .education h3 {
+    margin-bottom: 10px;
+  }
+
+  .education ul {
+    font-size: 1.05em;
+    line-height: 1.3em;
+  }
+
+  .education .row {
+    display: flex;
+    /* margin-left: 20px; */
+  }
+
+  .education .row div:first-child {
+    margin-right: 50px;
+    font-weight: 600;
+  }
+
+  .interests ul {
+    line-height: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .interests > ul li {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  header .logo img {
+    width: 55%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+}
